@@ -1,0 +1,13 @@
+[{
+  "id": "id1",
+  "name": "ansible",
+  "author": "some guys",
+  "total_downloads": 10101,
+  "current_version": "1.0.1"
+}, {
+  "id": "id2",
+  "name": "Flask",
+  "author": "some other guys",
+  "total_downloads": 10102,
+  "current_version": "1.0.2"
+}]

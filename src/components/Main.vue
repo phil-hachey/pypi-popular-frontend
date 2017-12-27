@@ -1,8 +1,11 @@
 <template>
   <div id="main">
-    <div id="search-bar">
+    <div id="search-header">
       <h2>PyPI Popular</h2>
-      <input name="search">
+      <div id="search-bar">
+        <icon name="search"></icon>
+        <input name="search">
+      </div>
     </div>
     <div id="search-container">
       <div id="search-filters">
@@ -46,28 +49,44 @@ export default {
 
 }
 
-#search-bar {
+#search-header {
   width: 100%;
   background-color: #F1F1F1;
   height: 40px;
-  display: inline-block;
+  display: flex;
   padding: 10px 10px 10px 10px;
 }
 
-#search-bar h2 {
+#search-header h2 {
   display: inline-block;
-  width: auto;
-  margin: 0;
-  margin-right: 20px;
+  width: 190px;
+  margin: auto;
   color: #234764;
 }
 
-#search-bar input {
-  width: 600px;
+#search-header svg {
+  color: #234764;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+#search-header input {
   height: 30px;
-  border: 1px solid #CCCCCC;
   border-radius: 5px;
   font-size: 16pt;
+  border: none;
+  background: none;
+  flex: 1 100%;
+  height: 100%;
+  margin-left: 15px;
+}
+
+#search-bar {
+  border: 1px solid #CCCCCC;
+  background-color: white;
+  flex: 1 100%;
+  display: flex;
+  margin: 0px 30px;
 }
 
 #search-container {

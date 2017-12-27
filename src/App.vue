@@ -20,4 +20,8 @@ export default {
 body {
   margin: 0;
 }
+
+input:focus, textarea:focus {
+  outline: none;
+}
 </style>

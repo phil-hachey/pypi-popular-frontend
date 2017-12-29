@@ -9,7 +9,8 @@
     </div>
     <div id="search-container">
       <div id="search-filters">
-
+        <div>
+        </div>
       </div>
       <div id="package-list">
         <div v-for="pack in packages" class="package-tile">
